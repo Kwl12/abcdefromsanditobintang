@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Bintang, Wanita Berhati Malaikat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #ffd1ff);
+            color: #8a4b76;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 25px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(206, 92, 139, 0.3);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 30px;
+            border: 2px solid #ffb6c1;
+        }
+        
+        .card:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,182,193,0.1) 0%, rgba(255,255,255,0) 70%);
+            z-index: 0;
+        }
+        
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            color: #d63384;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: #e83e8c;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .message {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: left;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 240, 245, 0.7);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #ff69b4;
+        }
+        
+        .heart {
+            color: #ff1493;
+            font-size: 2rem;
+            margin: 0 10px;
+            animation: heartbeat 1.5s ease infinite;
+        }
+        
+        .flowers {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .flower {
+            font-size: 2.5rem;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .signature {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: #c71585;
+            margin-top: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .music-player {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 10px 20px rgba(206, 92, 139, 0.2);
+            border: 2px dashed #ff69b4;
+        }
+        
+        .music-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .music-icon {
+            font-size: 2rem;
+            color: #ff1493;
+        }
+        
+        .hearts-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .heart-particle {
+            position: absolute;
+            font-size: 1.5rem;
+            color: #ff69b4;
+            opacity: 0.7;
+            animation: fall linear forwards;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0); }
+        }
+        
+        @keyframes fall {
+            to { transform: translateY(100vh) rotate(360deg); }
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2.8rem; }
+            h2 { font-size: 1.5rem; }
+            .message { font-size: 1.1rem; }
+            .card { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hearts-container" id="heartsContainer"></div>
+    
+    <div class="container">
+        <div class="card">
+            <h1>UNTUK BINTANG</h1>
+            <h2>terima Kasih Sudah Mau Dekat dengan Sandi selama ini</h2>
+            
+            <div class="message">
+                <p> BINTANG</p>
+                <p>terima kasih dari lubuk hati yang paling dalam karena selama ini kamu mau dekat dengan Sandi. Waktu dan perhatian yang banyak kamu berikan adalah hadiah terindah yang pernah Sandi terima.</p>
+                <p>Sandi sangat bahagia sekali sudah bisa mengenal wanita secantik dan sebaik kamu. Kamu benar-benar wanita berhati malaikat yang selalu membuat hari-hari Sandi lebih cerah.</p>
+                <p>Jika selama ini Sandi ada salah, baik yang disengaja maupun tidak, Sandi mohon maaf sebesar-besarnya. Sandi manusia biasa yang tak luput dari kekurangan.</p>
+                <p>sandi sadar, mungkin Sandi belum bisa memberikan yang terbaik untuk kamu</p>
+                <p>terima kasih sudah menjadi bagian dari hari-hari Sandi. Setiap tawa, setiap cerita, dan setiap momen bersamamu adalah kenangan berharga yang akan selalu Sandi simpan dalam hati.</p>
+                <p>Kamu adalah bintang yang menerangi kegelapan, bunga yang mewarnai kehidupan, dan malaikat yang membawa kebahagiaan.</p>
+            </div>
+            
+            <div class="flowers">
+                <div class="flower" style="animation-delay: 0s;">🌹</div>
+                <div class="flower" style="animation-delay: 0.5s;">🌸</div>
+                <div class="flower" style="animation-delay: 1s;">💮</div>
+                <div class="flower" style="animation-delay: 1.5s;">🏵️</div>
+                <div class="flower" style="animation-delay: 2s;">🌺</div>
+            </div>
+            
+            <p>Selalu ada untukmu <span class="heart"></span></p>
+            
+            <div class="signature">
+                from<br>
+                Sandi
+            </div>
+        </div>
+        
+        <div class="music-player">
+            <div class="music-info">
+                <div class="music-icon">🎵</div>
+                <div>Lagu untuk Bintang - "Perfect"</div>
+                <div class="music-icon">🎵</div>
+            </div>
+            <p>Lagu ini dipersembahkan khusus untukmu, Bintang!</p>
+        </div>
+    </div>
+
+    <audio id="bgMusic" autoplay loop>
+        <source src="https://e.top4top.io/m_3616ii7yi0.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <script>
+        // Membuat efek hati jatuh
+        function createHearts() {
+            const heartsContainer = document.getElementById('heartsContainer');
+            const heartCount = 50;
+            
+            for (let i = 0; i < heartCount; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'heart-particle';
+                heart.innerHTML = '❤';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
+                heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+                heart.style.opacity = Math.random() * 0.7 + 0.3;
+                
+                heartsContainer.appendChild(heart);
+                
+                // Hapus hati setelah animasi selesai
+                setTimeout(() => {
+                    heart.remove();
+                }, 10000);
+            }
+        }
+        
+        // Membuat hati secara berkala
+        setInterval(createHearts, 1000);
+        
+        // Memutar musik otomatis
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('bgMusic');
+            audio.volume = 0.5; // Set volume ke 50%
+            
+            // Coba memutar musik (beberapa browser memerlukan interaksi pengguna)
+            const playAudio = () => {
+                audio.play().catch(e => {
+                    console.log("Autoplay dicegah, menunggu interaksi pengguna");
+                });
+            };
+            
+            // Coba putar saat halaman dimuat
+            playAudio();
+            
+            // Coba putar saat pengguna mengklik di mana saja di halaman
+            document.body.addEventListener('click', function() {
+                playAudio();
+            }, { once: true });
+        });
+        
+        // Animasi tambahan untuk elemen
+        const messages = document.querySelectorAll('.message p');
+        messages.forEach((msg, index) => {
+            msg.style.opacity = '0';
+            msg.style.transform = 'translateY(20px)';
+            msg.style.transition = `all 0.8s ease ${index * 0.2}s`;
+            
+            setTimeout(() => {
+                msg.style.opacity = '1';
+                msg.style.transform = 'translateY(0)';
+            }, 500 + index * 200);
+        });
+    </script>
+</body>
+</html>
